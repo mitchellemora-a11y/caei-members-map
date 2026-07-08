@@ -1,79 +1,40 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-
-<meta charset="UTF-8">
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>CAEI Members Map</title>
-
-<link rel="stylesheet" href="style.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CAEI Members Map</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
 <header>
-
-<h1>CAEI Members Map</h1>
-
-<div class="toolbar">
-
-<input
-type="text"
-id="search"
-placeholder="Buscar institución o país">
-
-<select id="language">
-
-<option value="ES">Español</option>
-
-<option value="EN">English</option>
-
-<option value="FR">Français</option>
-
-<option value="PT">Português</option>
-
-</select>
-
-</div>
-
+  <h1>CAEI Members Map</h1>
+  <div class="toolbar">
+    <input type="text" id="search" placeholder="Buscar institución o país">
+    <select id="language">
+      <option value="ES">Español</option>
+      <option value="EN">English</option>
+      <option value="FR">Français</option>
+      <option value="PT">Português</option>
+    </select>
+  </div>
 </header>
 
 <div id="container">
-
-<div id="map" style="width:100%;height:700px;"></div>
-
-<div id="panel">
-
-<h2>Seleccione un país</h2>
-
-<div id="content">
-
-Seleccione un país en el mapa para visualizar las instituciones miembro.
-
+  <div id="map"></div>
+  <div id="panel">
+    <h2 id="panelTitle">Seleccione un país</h2>
+    <div id="content">Seleccione un país en el mapa.</div>
+  </div>
 </div>
-
-</div>
-
-</div>
-
-<!-- amCharts 5 -->
 
 <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
-
 <script src="https://cdn.amcharts.com/lib/5/map.js"></script>
-
 <script src="https://cdn.amcharts.com/lib/5/geodata/worldLow.js"></script>
-
 <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
-
-<script src="members.js"></script>
-
+<script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
 <script src="script.js"></script>
 
 </body>
-
 </html>
